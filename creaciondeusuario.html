@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Check ESPOL</title>
+    <link href="Bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="Bootstrap/estilo.css" rel="stylesheet" />
+    <script src="js/jquery.min.js"></script>  
+    <script src="js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Frijole' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>
+        <div id="containerBanner" class="container">
+            <div class="main">
+                <p class="fuenteLogo text-center paddingTop"><a id="index" href="index.html">CHECK ESPOL</a></p>
+            </div>
+        </div>
+    </header>
+    <div id="wrap">
+        <div class="container">
+            <div class="row">
+                <div id="navMenu" class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+                    <ul class="nav nav-justified fuenteMenu">
+                        <li><a href="facultades.html">FACULTADES</a></li>
+                        <li class="active"><a href="index.html">NOSOTROS</a></li>
+                        <li><a href="registrate">REGÍSTRATE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container cuerporegistro">
+            <form method="post" action="emailForm.php"> 
+                <br>
+                <div class="row">
+                  <label for="name">Nombre: <span class="required">*</span></label> 
+                  <input type="text" id="name" name="name" value="" placeholder="Your name" required="required" autofocus="autofocus" /> 
+                </div>  
+                <br>
+                <div class="row">
+                  <label for="name">Apellidos : <span class="required">*</span></label> 
+                  <input type="text" id="name" name="name" value="" placeholder="Your name" required="required" autofocus="autofocus" /> 
+                </div> 
+                <br>
+                <div class="row">
+                  <label for="name">Nickname: <span class="required">*</span></label> 
+                  <input type="text" id="name" name="name" value="" placeholder="Your name" required="required" autofocus="autofocus" /> 
+                </div>   
+                <br> 
+                 <div class="row">
+                  <label for="email">Direccion Correo: <span class="required">*</span></label> 
+                  <input type="email" id="email" name="email" value="" placeholder="correo@espol.edu.ec" required="required" /> 
+                  </div> 
+                     <br>
+                  <div class="row text-center">
+                  <input type="submit" value="Guardar" id="submit" />
+                  </div>
+            </form> 
+        </div>
+    </div>
+    <div id="footer" class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                    <p>Creado by: Hernan Quinde</p>
+                    <p>Contact information: <a href="mailto:someone@example.com">
+                    andres_ra22@gmail.com</a>.</p>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>
