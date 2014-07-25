@@ -1,4 +1,47 @@
 <?php
+
+class Profesor{
+  private $localhost = "localhost";    
+    private $usuario = "root";
+    private $password = "root";
+    private $database = "Profesor"; 
+
+public function conectar()
+ {
+  if(!isset($this->conexion)){
+    $this->conexion = (mysql_connect($this->localhost, $this->usuario,$this->password)) or die(mysql_error() );
+    mysql_select_db($this->database , $this->conexion) or die(mysql_error());      
+
+  }
+ }     
+
+public function consulta($sql)
+ {
+    $muestra = mysql_query($sql,$this->conexion);
+    if(!$resultado){
+     echo 'MySQL Error: ' . mysql_error();
+     exit;
+    }
+    return $muestra; 
+ }
+ }
+
+
+$conn= mysql_connect("localhost", "root", "") or die (mysql_error());
+mysql_select_db("prueba", $conn);
+$sql = "select * from Profesor";
+$result = mysql_query($sql, $conn) or die (mysql_error());
+
+while($row = mysql_fetch_assoc($result)) {
+  foreach ($row as $name => $value) {
+    print "$name: $value <br /> \n";
+    }
+
+}
+
+
+
+
 class Profesor { 
 
 	private $nombre;
@@ -11,7 +54,7 @@ class Profesor {
 		$this->apellido = $apellido; 
 		$this->email = $email; 
 	} 
-	
+
 
 	function setName($nombre){ 
 		$this->nombre = $nombre; 
@@ -32,4 +75,5 @@ class Profesor {
 		return $this->email; 
 	} 
 
-} //connection to the database $dbhandle = mysql_connect("localhost", "root", "") or die("Unable to connect to MySQL"); echo "Connected to MySQL<br>"; //select a database to work with $selected = mysql_select_db("prueba",$dbhandle) or die("Could not select database"); echo "Connected to the database<br>"; //create Usuario object $usuarioAuxiliar = new Usuario($idU,$nombreU); mysql_query("INSERT INTO demo (iddemo, texto) VALUES({$usuarioAuxiliar -> getId()}, '{$usuarioAuxiliar -> getName()}') ") or die(mysql_error()); echo "Data Inserted!<br>"; //execute the SQL query and return records $result = mysql_query("SELECT iddemo, texto FROM demo"); //fetch tha data from the database while ($row = mysql_fetch_array($result)) { //echo "ID:".$row{'iddemo'}." Name:".$row{'texto'}."<br>"; //echo $usuarioAuxiliarConsulta ."<br>"; // echo "Id: ".$usuarioAuxiliarConsulta.getId()."<br>"; $usuarioAuxiliarConsulta = new Usuario($row{'iddemo'},$row{'texto'}); echo "ID: ".$usuarioAuxiliarConsulta -> getId()." "; echo "Nombre Usuario: ".$usuarioAuxiliarConsulta -> getName(); echo "<br>"; } //close the connection mysql_close($dbhandle); ?>
+}
+?>
