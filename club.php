@@ -62,8 +62,8 @@ class club{
 	}
 
 	$conn= mysql_connect("localhost", "root", "") or die (mysql_error());
-	mysql_select_db("prueba", $conn);
-	$sql = "select * from Profesor";
+	mysql_select_db("proyecto", $conn);
+	$sql = "select * from club";
 	$result = mysql_query($sql, $conn) or die (mysql_error());
 	
 	while($row = mysql_fetch_assoc($result)) {
