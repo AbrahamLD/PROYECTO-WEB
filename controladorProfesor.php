@@ -12,7 +12,7 @@ class ControladorProfesor
     }
     
     function mostrarProfesores() {
-        $db = new database('localhost', 'root', '');
+        $db = new database('localhost', 'root', 'root');
         $db->connectdb();
         $db->selectDatabase('prueba');
         
@@ -22,7 +22,7 @@ class ControladorProfesor
         
         while ($row = mysql_fetch_array($result)) {
             
-            $ProfesorAuxiliarConsulta = new Profesor($row{'nombre'},$row{'apellido'},$row{'email'});
+            $ProfesorAuxiliarConsulta = new Profesor($row{'idProfesor'},$row{'nombre'},$row{'apellido'},$row{'email'});
             array_push($arrayProfesores, $ProfesorAuxiliarConsulta);
          }
 
