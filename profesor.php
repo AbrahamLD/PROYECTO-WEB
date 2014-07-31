@@ -1,18 +1,25 @@
 <?
 class Profesor { 
 
+	private $idProfesores
 	private $nombre;
 	private $apellido;
 	private $email
 
-	function __construct($nombre,$apellido,$email) { 
-
+	function __construct($idProfesores,$nombre,$apellido,$email) { 
+		
+		$this->nombre = $idProfesores; 
 		$this->nombre = $nombre; 
 		$this->apellido = $apellido; 
 		$this->email = $email; 
 	} 
 
-
+	function setName($idProfesores){ 
+		$this->nombre = $idProfesores; 
+	} 
+	function getName(){ 
+		return $this->idProfesores; 
+	} 
 	function setName($nombre){ 
 		$this->nombre = $nombre; 
 	} 
