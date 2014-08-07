@@ -1,7 +1,9 @@
 <?php
 
-class Database {
-    
+
+
+class dataBase
+{
   public $isConnected;
   protected $datab;
 
@@ -65,7 +67,6 @@ class Database {
   public function deleteRow($query, $params){
     return $this->insertRow($query, $params);
   }
-
 }
 
 ?>

@@ -4,11 +4,11 @@ include_once('dataBase.php');
 // Define configuration
 define("DB_HOST", "localhost");
 define("DB_USER", "root");
-define("DB_PASS", "");
-define("DB_NAME", "prueba");
+define("DB_PASS", "Estud1ante");
+define("DB_NAME", "clasedemo");
 
 
-class DataBaseControlador extends dataBase
+class Collector extends dataBase
 {
   public static $db;
   private $host      = DB_HOST;

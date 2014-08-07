@@ -2,50 +2,59 @@
 
 class Usuario{
 
+	private $idusuario;
 	private $nombre;
 	private $apellido;	
 	private $email;
 	private $contrasenia;
 
-	function __construct($nombre,$apellido,$email,$contrasenia) { 
+	function __construct($idusuario,$nombre,$apellido,$email,$contrasenia) { 
+ 		$this->idusuario = $idusuario;
  		$this->nombre = $nombre;
  		$this->apellido = $apellido; 
  		$this->email = $email; 
  		$this->contrasenia = $contrasenia; 
  	} 
 
+ 	function getIdusuario(){
+		return $this ->idusuario;
+	}
+
+	function setIdusuario($idusuario){
+		$this->idusuario = $idusuario;
+	}
+
  	function getNombre(){
 		return $this ->nombre;
 	}
 
-	function setNombre($nuevoNombre){
-		$this->nombre = $nuevoNombre;
+	function setNombre($nombre){
+		$this->nombre = $nombre;
 	}
 
 	function getApellido(){
 		return $this ->apellido;
 	}
 
-	function setApellido($nuevoApellido){
-		$this->nombre = $nuevoApellido;
+	function setApellido($apellido){
+		$this->apellido = $apellido;
 	}
 
 	function getEmail(){
 		return $this ->email;
 	}
 
-	function setEmail($nuevoEmail){
-		$this->email = $nuevoEmail;
+	function setEmail($email){
+		$this->email = $email;
 	}
 
 	function getContrasenia(){
 		return $this ->contrasenia;
 	}
 
-	function setContrasenia($nuevoContrasenia){
-		$this->contrasenia = $nuevoContrasenia;
+	function setContrasenia($contrasenia){
+		$this->contrasenia = $contrasenia;
 	}
-
 
 
 
