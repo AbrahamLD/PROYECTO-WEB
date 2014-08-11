@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
@@ -32,6 +33,8 @@ $email = $_POST['email'];
 }
 ?>
 =======
+=======
+>>>>>>> origin/master
 <html>
      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <?php include_once('metadatos.php');?>
@@ -263,4 +266,7 @@ $email = $_POST['email'];
         
     </body>
 </html>
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master

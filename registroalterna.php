@@ -14,7 +14,11 @@ $email = $_POST['email'];
 			echo'<script type="text/javascript">
             alert("No coincide las contraseña");
 <<<<<<< HEAD
+<<<<<<< HEAD
             window.location="http://localhost/registrarse/creaciondeusuarioalterna.html"
+=======
+            window.location="http://localhost/registro/creaciondeusuarioalterna.html"
+>>>>>>> origin/master
 =======
             window.location="http://localhost/registro/creaciondeusuarioalterna.html"
 >>>>>>> origin/master
@@ -23,7 +27,11 @@ $email = $_POST['email'];
 				echo'<script type="text/javascript">
 				alert("Error al registrar! - Correo Duplicado - Ingresa otro");
 <<<<<<< HEAD
+<<<<<<< HEAD
 				window.location="http://localhost/registrarse/creaciondeusuarioalterna.html"
+=======
+				window.location="http://localhost/registro/creaciondeusuarioalterna.html"
+>>>>>>> origin/master
 =======
 				window.location="http://localhost/registro/creaciondeusuarioalterna.html"
 >>>>>>> origin/master
@@ -36,7 +44,11 @@ $email = $_POST['email'];
 			echo'<script type="text/javascript">
                 alert("El Registro se ha completado con exito");
 <<<<<<< HEAD
+<<<<<<< HEAD
                 window.location="http://localhost/registrarse/creaciondeusuarioalterna.html"
+=======
+                window.location="http://localhost/registro/creaciondeusuarioalterna.html"
+>>>>>>> origin/master
 =======
                 window.location="http://localhost/registro/creaciondeusuarioalterna.html"
 >>>>>>> origin/master
@@ -46,7 +58,11 @@ $email = $_POST['email'];
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> origin/master
 =======
 ?>
 >>>>>>> origin/master

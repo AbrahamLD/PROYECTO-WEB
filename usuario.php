@@ -4,17 +4,22 @@ class Usuario{
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	private $idregistro;
 =======
 	private $idusuario;
 >>>>>>> origin/master
 =======
 >>>>>>> parent of 7522e03... registro validado
+=======
+	private $idusuario;
+>>>>>>> origin/master
 	private $nombre;
 	private $apellido;	
 	private $email;
 	private $contrasenia;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	function __construct($idregistro,$nombre,$apellido,$contrasenia,$email) { 
@@ -26,12 +31,17 @@ class Usuario{
 =======
 	function __construct($nombre,$apellido,$email,$contrasenia) { 
 >>>>>>> parent of 7522e03... registro validado
+=======
+	function __construct($idusuario,$nombre,$apellido,$email,$contrasenia) { 
+ 		$this->idusuario = $idusuario;
+>>>>>>> origin/master
  		$this->nombre = $nombre;
  		$this->apellido = $apellido; 
  		$this->email = $email; 
  		$this->contrasenia = $contrasenia; 
  	} 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  	function setIdregistro($idregistro){
@@ -41,6 +51,8 @@ class Usuario{
 	function getIdregistro(){
 		return $this->idregistro;
 =======
+=======
+>>>>>>> origin/master
  	function getIdusuario(){
 		return $this ->idusuario;
 	}
@@ -49,6 +61,7 @@ class Usuario{
 		$this->idusuario = $idusuario;
 	}
 
+<<<<<<< HEAD
  	function getNombre(){
 		return $this ->nombre;
 	}
@@ -70,13 +83,15 @@ class Usuario{
 		$this->apellido = $apellido;
 >>>>>>> origin/master
 =======
+=======
+>>>>>>> origin/master
  	function getNombre(){
 		return $this ->nombre;
 >>>>>>> parent of 7522e03... registro validado
 	}
 
-	function setNombre($nuevoNombre){
-		$this->nombre = $nuevoNombre;
+	function setNombre($nombre){
+		$this->nombre = $nombre;
 	}
 
 <<<<<<< HEAD
@@ -92,8 +107,8 @@ class Usuario{
 >>>>>>> parent of 7522e03... registro validado
 	}
 
-	function setApellido($nuevoApellido){
-		$this->nombre = $nuevoApellido;
+	function setApellido($apellido){
+		$this->apellido = $apellido;
 	}
 
 <<<<<<< HEAD
@@ -109,8 +124,8 @@ class Usuario{
 >>>>>>> parent of 7522e03... registro validado
 	}
 
-	function setEmail($nuevoEmail){
-		$this->email = $nuevoEmail;
+	function setEmail($email){
+		$this->email = $email;
 	}
 
 <<<<<<< HEAD
@@ -120,10 +135,9 @@ class Usuario{
 =======
 >>>>>>> origin/master
 
-	function setContrasenia($nuevoContrasenia){
-		$this->contrasenia = $nuevoContrasenia;
+	function setContrasenia($contrasenia){
+		$this->contrasenia = $contrasenia;
 	}
-
 
 
 

@@ -1,5 +1,6 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 session_start();
 ?>
 
@@ -30,6 +31,8 @@ session_start();
 			echo "<br> Bienvenido! " . $_SESSION['username'];
 
 =======
+=======
+>>>>>>> origin/master
 
 include('databaseControlador.php');
 include('facultadClase.php');
@@ -62,6 +65,9 @@ session_start();
             $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
 			echo "<br> Bienvenido! " . $_SESSION['username'];
 
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 	  }	
       else {
@@ -74,7 +80,11 @@ session_start();
 
 </body>
 <<<<<<< HEAD
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> origin/master
 =======
 </html>
 >>>>>>> origin/master
