@@ -1,53 +1,60 @@
 <?php
 
-class Usuario{
+class usuario{
 
+	private $idregistro;
 	private $nombre;
 	private $apellido;	
 	private $email;
 	private $contrasenia;
 
-	function __construct($nombre,$apellido,$email,$contrasenia) { 
+	function __construct($idregistro,$nombre,$apellido,$contrasenia,$email) { 
+ 		$this->idregistro = $idregistro;
  		$this->nombre = $nombre;
- 		$this->apellido = $apellido; 
- 		$this->email = $email; 
- 		$this->contrasenia = $contrasenia; 
+ 		$this->apellido = $apellido;
+ 		$this->contrasenia = $contrasenia;
+ 		$this->email = $email;
  	} 
 
- 	function getNombre(){
-		return $this ->nombre;
+ 	function setIdregistro($idregistro){
+		$this->idregistro = $idregistro;
+	}
+	
+	function getIdregistro(){
+		return $this->idregistro;
 	}
 
-	function setNombre($nuevoNombre){
-		$this->nombre = $nuevoNombre;
+ 	function setNombre($nombre){
+		$this->nombre = $nombre;
+	}
+
+	function getNombre(){
+		return $this->nombre;
+	}
+
+	function setApellido($apellido){
+		$this->apellido = $apellido;
 	}
 
 	function getApellido(){
-		return $this ->apellido;
+		return $this->apellido;
 	}
 
-	function setApellido($nuevoApellido){
-		$this->nombre = $nuevoApellido;
+	function setEmail($email){
+		$this->email = $email;
 	}
 
 	function getEmail(){
-		return $this ->email;
+		return $this->email;
 	}
 
-	function setEmail($nuevoEmail){
-		$this->email = $nuevoEmail;
+	function setContrasenia($contrasenia){
+		$this->contrasenia = $contrasenia;
 	}
 
 	function getContrasenia(){
-		return $this ->contrasenia;
+		return $this->contrasenia;
 	}
-
-	function setContrasenia($nuevoContrasenia){
-		$this->contrasenia = $nuevoContrasenia;
-	}
-
-
-
 
 }
 
